@@ -1,13 +1,24 @@
+#Below program counts backwards from 100 to 1 and prints 'Agile' if the number is divisible by 5, 'Software' if the number is divisible by 3, 'Testing' if the number is divisible by both, and prints just the number if none of those cases are true
+    
+
 number = 100
-for x in range(100):
-    
+
+for x in range(number): 
+
     if number % 3 == 0  and number % 5 == 0:
+
         print('Testing')
+
     elif number % 3 == 0 and number % 5 != 0:
+
         print('Software')
+
     elif number % 5 == 0 and number % 3 != 0:
-        print('Agile')
-    
+
+        print('Agile')  
+
     else:
+
         print(number)
+
     number = number-1
